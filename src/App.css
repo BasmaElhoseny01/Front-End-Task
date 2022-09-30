@@ -1,38 +1,180 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+html {
+  background-color: white;
+  height: 100vh;
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(190, 129, 250) 11.2%, rgb(17, 157, 244) 91.1%);
+  height: 100%;
+
   text-align: center;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*=============================================APP======================================================*/
+.App {
+
+  width: 35%;
+  min-width: 200px;
+  max-width: 700px;
+
+  /* color:whitesmoke */
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 10px;
+}
+.App h1 {
+  color: whitesmoke;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*============================================InputForm==================================================*/
+.InputForm {
+
+  margin-top: 10px;
+  box-shadow: 2px 3px 8px rgb(0, 0, 0, 0.24);
+}
+
+.InputForm h5 {
+  font-size: 12pt;
+  font-weight: 200;
+
+  color: whitesmoke;
+}
+
+.Form {
+  padding: 5px;
+  margin: 10px 0px 10px 0px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.InputField {
+  width: 90%;
+  border: none;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.CheckBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.CheckBox label {
+  font-size: 10pt;
+}
+/*=============================================Signup====================================================*/
+.SignUpForm {
+  height: 300px;
+}
+
+.SignUpForm .CheckBox {
+  width: 90%;
+}
+
+/*=============================================Signin====================================================*/
+.SigInForm {
+  height: 280px;
+}
+
+.SigInForm .CheckBox {
+  width: 50%;
+}
+/*=============================================Signin by social====================================================*/
+.SocialForm {
+  height: 150px;
+}
+.Signin_CheckBox_link {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/*============================================Button=========================================================*/
+.btn {
+  width: 90%;
+  border: none;
+  padding: 5px;
+  color: whitesmoke;
+  font-weight: 500;
+
+  background-color: rgb(15, 120, 185);
+}
+
+.Gmailbtn {
+  width: 90%;
+  border: none;
+  padding: 5px;
+  color: whitesmoke;
+  font-weight: 500;
+
+  background-color: rgb(255, 0, 0);
+}
+
+/*========================================Toggling buttons========================================================*/
+.Buttons {
+  margin-top: 10px;
+}
+
+.Buttons button {
+  width: 50%;
+  padding: 5px;
+  border: none;
+  font-size: 12pt;
+}
+
+/*==================================================Links============================================*/
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.Link {
+  font-size: 10pt;
+  color: whitesmoke;
+}
+
+.Link a {
+  color: blue;
+}
+
+/*=============================================Media Query============================================*/
+@media (max-width: 550px) {
+  .Signin_CheckBox_link {
+    width: 90%;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
   }
-  to {
-    transform: rotate(360deg);
+  .Signin_CheckBox_link .CheckBox{
+    width: 100%;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .App {
+    width: 60%;
   }
 }
