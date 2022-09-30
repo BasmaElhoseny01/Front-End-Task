@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Front-End-Task/static/css/main.d9023a4b.css",
+    "main.js": "/Front-End-Task/static/js/main.0ac341b9.js",
+    "index.html": "/Front-End-Task/index.html",
+    "main.d9023a4b.css.map": "/Front-End-Task/static/css/main.d9023a4b.css.map",
+    "main.0ac341b9.js.map": "/Front-End-Task/static/js/main.0ac341b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9023a4b.css",
+    "static/js/main.0ac341b9.js"
+  ]
+}
